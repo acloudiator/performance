@@ -7,7 +7,8 @@ RUN apk --update add iperf3 \
     && adduser -S iperf
 
 USER iperf
-    
+
+#Expose ports    
 EXPOSE 5201
 
 ENTRYPOINT ["iperf3"]
