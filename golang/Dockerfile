@@ -1,4 +1,4 @@
-FROM golang:1.9-alpine3.6
+FROM golang:latest
 
 MAINTAINER Aasif Shaikh (acloudiator@gmail.com)
 
