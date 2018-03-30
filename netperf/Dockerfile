@@ -4,7 +4,7 @@ ENV NETPERF_VERSION=2.7.0
 
 RUN apk add --no-cache --virtual build-dependencies curl build-base linux-headers lksctp-tools-dev \
     && apk add --no-cache --virtual runtime-dependencies lksctp-tools \
-    && curl -LO ftp://ftp.netperf.org/netperf/netperf-${NETPERF_VERSION}.tar.gz \
+    && curl -LO https://github.com/HewlettPackard/netperf/archive/netperf-${NETPERF_VERSION}.tar.gz \
     && tar -xzf netperf-${NETPERF_VERSION}.tar.gz \
     && cd netperf-${NETPERF_VERSION} \
     && ./configure \
